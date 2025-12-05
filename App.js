@@ -12,6 +12,8 @@ import HomeScreen from './screens/HomeScreen';
 import FormsScreen from './screens/FormsScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import DisplayScreen from './screens/DisplayScreen';
+import FirebaseCRUDScreen from './screens/FirebaseCRUDScreen';
+import UserFormScreen from './screens/UserFormScreen';
 
 // Custom components
 import CustomHeader from './components/custom/CustomHeader';
@@ -104,6 +106,21 @@ export default function App() {
             component={DisplayScreen}
             options={{
               title: 'Display',
+            }}
+          />
+          <Drawer.Screen 
+            name="FirebaseCRUD" 
+            component={FirebaseCRUDScreen}
+            options={{
+              title: 'Firebase CRUD',
+            }}
+          />
+          <Drawer.Screen 
+            name="UserForm" 
+            component={UserFormScreen}
+            options={{
+              title: 'User Form',
+              drawerItemStyle: { display: 'none' }, // Hide from drawer menu
             }}
           />
           
